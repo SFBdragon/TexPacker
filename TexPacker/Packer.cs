@@ -1,4 +1,22 @@
-﻿using System;
+﻿
+/*
+  The MIT License (MIT)
+  Copyright © 2020 Shaun Beautement
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+  documentation files (the “Software”), to deal in the Software without restriction, including without 
+  limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of 
+  the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO 
+  THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
+  TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -137,55 +155,3 @@ namespace TexPacker
 		}
 	}
 }
-
-
-//Console.WriteLine("Saving XML data...");
-
-//// Marshaling for Rectangle -> byte[] conversion
-//int s = Marshal.SizeOf<Rectangle>();
-//byte[] buffer = new byte[s];
-//IntPtr ptr = Marshal.AllocHGlobal(s);
-//// Marshal blank rect to avoid warnings later with destroying previous ptr contents
-//Marshal.StructureToPtr(new Rectangle(), ptr, false);
-
-//// Create and write an xml file containing the source rectangles
-
-//using var fs = new FileStream(Path.Combine(destDirectory, outputName + ".xml"), FileMode.Create);
-//XmlWriter writer = XmlWriter.Create(fs, new XmlWriterSettings() {
-//	Encoding = Encoding.UTF8,
-//	NewLineChars = "\n",
-//	CloseOutput = true
-//});
-
-//writer.WriteStartDocument();
-//writer.WriteStartElement("frames");
-
-//for (int i = 0; i < sources.Count; i++) {
-//	writer.WriteStartElement("frame");
-
-//	writer.WriteStartElement("path");
-//	writer.WriteValue(sources[i].id);
-//	writer.WriteEndElement();
-
-//	writer.WriteStartElement("index");
-//	writer.WriteValue(sources[i].index);
-//	writer.WriteEndElement();
-
-//	writer.WriteStartElement("rot");
-//	writer.WriteValue(sources[i].rot);
-//	writer.WriteEndElement();
-
-//	Marshal.StructureToPtr(sources[i].rect, ptr, true);
-//	Marshal.Copy(ptr, buffer, 0, s);
-
-//	writer.WriteStartElement("rect");
-//	writer.WriteBase64(buffer, 0, s);
-//	writer.WriteEndElement();
-
-//	writer.WriteEndElement();
-//}
-//writer.WriteEndElement();
-//writer.WriteEndDocument();
-//writer.Close();
-
-//Marshal.FreeHGlobal(ptr);
