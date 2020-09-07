@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TexPacker", "TexPacker\TexPacker.csproj", "{C2FD7717-F31A-4A34-8229-746B7ECEC224}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TexPackerLib", "TexPackerLib\TexPackerLib.csproj", "{B2CF8BA8-E0E7-4FCB-861C-0B998B3206D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2FD7717-F31A-4A34-8229-746B7ECEC224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2FD7717-F31A-4A34-8229-746B7ECEC224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2FD7717-F31A-4A34-8229-746B7ECEC224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2FD7717-F31A-4A34-8229-746B7ECEC224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2CF8BA8-E0E7-4FCB-861C-0B998B3206D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2CF8BA8-E0E7-4FCB-861C-0B998B3206D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2CF8BA8-E0E7-4FCB-861C-0B998B3206D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2CF8BA8-E0E7-4FCB-861C-0B998B3206D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5522A622-7015-4EC8-AD11-DA4279A282A9}
+	EndGlobalSection
+EndGlobal
