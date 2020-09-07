@@ -8,7 +8,7 @@
 	http://wiki.unity3d.com/index.php/MaxRectsBinPack
 
 	Modified by SFBdragon/Shaun Beautement for integration purposes.
-	This version as follows is thus under the liscence as specified by the project (MIT).
+	This version as follows is thus under the liscence as specified by the project file LISCENSE.md.
 */
 
 using System;
