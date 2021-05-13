@@ -3,6 +3,8 @@
 A small tool for maxrects packing of atlases.  
 It's dead simple, quite fast, and command line-operated for creating and managing packaging configurations for your content folders.
 
+WARNING: This is not actively maintained or developed currently, this is an old personal project.
+
 Package outputs are as follows in {Config:Output):
 - {Config:Name}.json  
   Stores an array of tuples with four fields representing the original images:
@@ -13,8 +15,5 @@ Package outputs are as follows in {Config:Output):
 - {Config:Name}[Atlas Id].png  
   Series of atlas files indexed by name.  
   Amount of atlases as required per the specified Config:width and Config:height.  
-
-The TexPackerLib will soon become a way of cleanly interfacing with the atlas data, as well as being platform-agnostic.  
-As well as that, I will likely clean up the internals and naming schemes a little, though it shouldn't present an issue as of now.  
 
 There are no restrictions as to how you use this software commercially or otherwise, and I do not own the output of this software.  
